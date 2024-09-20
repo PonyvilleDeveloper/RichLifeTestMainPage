@@ -1,0 +1,274 @@
+@import url("./common.css");
+
+.gradient-text {
+    background: linear-gradient(90deg, var(--Gradient-Color_1) 0%, var(--Gradient-Color_2) 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.large {
+    font-size: 20px;
+}
+
+.medium {
+    font-size: 16px;
+    line-height: 19.2px;
+}
+
+.small {
+    font-size: 14px;
+}
+
+.gray {
+    color: var(--Text-Color_60);
+}
+
+h1 {
+    font-size: 35px;
+    line-height: 42px;
+}
+
+h6 {
+    font-weight: 500;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+button.white {
+    border: 2px solid var(--Accent-Light-Blue_100);
+    background-color: white;
+    color: var(--Accent-Light-Blue_100);
+    width: fit-content;
+}
+
+span.purple *:not(img) {
+    background-color: var(--Accent-Purple_100);
+    border: 2px solid var(--Accent-Purple_100);
+    color: white;
+}
+
+span.purple img[alt=figure] {
+    border: 0px;
+    height: 1.5em;
+    width: 1.25em;
+    position: relative;
+    top: 6.5px;
+    left: -8px;
+}
+
+@media (min-width: 1370px) {
+    span.button-group button, span.purple button {
+        padding: 1em 2em;
+    }
+}
+
+span.purple button.square {
+    padding: 2px;
+    @media (min-width: 1370px) {
+        padding: 0.75em;
+    }
+    height: fit-content;
+    width: auto;
+    aspect-ratio: 1 / 1;
+    position: relative;
+    top: 3px;
+    left: -16.5px;
+}
+
+span.purple button.square img[alt=arrow] {
+    width: 70%;
+    height: auto;
+    object-fit: contain;
+}
+
+header, footer {
+    background-color: var(--background-color);
+}
+
+article {
+    background-color: inherit;
+    margin: 0 16%;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex.column {
+    flex-direction: column;
+}
+
+.flex.row {
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+header article div div {
+    width: 50%;
+}
+
+header article div div:first-child {
+    padding: 7.5% 0;
+}
+
+header article div div:last-child {
+    padding: 0 0 12em 0;
+}
+
+img#tor {
+    width: 85%;
+    position: relative;
+    margin-left: auto;
+}
+
+img.advantage {
+    @media (min-width: 1700px) {
+        width: 19em;
+    }
+    @media (max-width: 1700px) {
+        width: 15em;
+    }
+    @media (max-width: 1450px) {
+        width: 12em;
+    }
+    border-radius: 25px;
+}
+
+div.advantage {    
+    @media (min-width: 1800px) {
+        width: 19em;
+        height: 22em;
+    }
+    @media (max-width: 1800px) {
+        width: 15em;
+        height: 19em;
+    }
+    @media (max-width: 1450px) {
+        width: 12em;
+        height: 17em;
+    }
+    margin-bottom: 4em;
+}
+
+div.advantage div.advantage_desc {
+    position: relative;
+    top: -17em;
+    @media (min-width: 1700px) {
+        top: -20em;
+        left: 0.5em;
+    }
+    @media (max-width: 1450px) {
+        top: -14em;
+        left: 0.25em;
+    }
+    margin: 0 1em;
+}
+
+div.advantage_desc h6 {
+    margin: 0;
+}
+
+div#questions-form {
+    padding: 7em 0 0 0;
+    width: 40%;
+}
+
+form#question *{
+    border: 1px solid #DCD8E3;
+    border-radius: 50px;
+    width: 100%;
+    margin: 1em 0;
+    padding: 1em;
+}
+
+img#girl {
+    width: 85%;
+    position: relative;
+    bottom: -12px;
+}
+
+div.step {
+    border: 0px solid;
+    border-radius: 25px;
+    background-color: var(--background-color);
+    padding: 0.5em;
+    width: 30%;
+}
+
+div.step div.step-desc {
+    height: 4.5em;
+    @media (max-width: 1360px) {
+        height: 5em;
+    }
+    @media (min-width: 1800px) {
+        height: 3em;
+    }
+}
+
+p.step-mark {
+    background-color: #F7619D33;
+    color: var(--Error);
+    border-radius: 50px;
+    width: fit-content;
+    padding: 8px;
+    margin-left: 0.5vw;
+    @media (min-width: 1700px) {
+        margin-left: 1vw;
+    }
+}
+
+p.step {
+    position: relative;
+    margin-left: 5.5vw;
+    bottom: 55px;
+}
+
+img.step-deco {
+    width: 2.5%;
+}
+
+img.step-deco#raised {
+    position: relative;
+    bottom: 100px;
+}
+
+h2 {
+    color: white;
+    font-size: 1.5vw;
+}
+
+div#presentation {
+    height: 20vw;
+}
+
+div#video {
+   width: auto;
+   height: auto;
+   flex-grow: 2;
+}
+
+div#access-back {
+    margin-left: 1em;
+    width: auto;
+    height: auto;
+    flex-grow: 1;    
+}
+
+img[alt="access-back"] {
+    border-radius: 25px;
+}
+
+div#access-desc {
+    position: relative;
+    top: -8vw;
+    left: 48vw;
+}
+
+img[alt="Result card"] {
+    width: 30%;
+}

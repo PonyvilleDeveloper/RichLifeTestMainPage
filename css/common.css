@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Golos+Text:wght@400..900&display=swap');
+
+body { /* исправление отступов у тела страницы */
+    margin: 0;
+    overflow-x: hidden;
+}
+
+iframe.importer {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    overflow: visible !important;
+    overflow-clip-margin: 12em !important;
+    background-color: inherit;
+}
+
+iframe.hat { /* Исправление высоты импортёра шапки */
+    height: 5em;
+    margin-bottom: 2em;
+}
+
+iframe.lwr { /* Исправдение высоты импортёра подвала */
+    height: 17em;
+    transform: translateZ(1px);
+}
+
+html { /* color-scheme */
+    --background-color: #F4F6F8;
+    --Accent-Light-Blue_100: #5DB3E8;
+    --Text-Color_60: #797F8F;
+    --Success_100: #54A849;
+    --Accent-Blue_100: #5074E7;
+    --Gradient-Color_1: #5DB3E8;
+    --Gradient-Color_2: #975AF6;
+    --Accent-Purple_100: #975AF6;
+    --Text-Color_60: #797F8F;
+    --Error: #F7619D;
+}
+
+* { /* Повсеместный шрифт */
+    font-family: "Golos Text", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button {
+    border-radius: 50px;
+    padding: 0.5em;
+}

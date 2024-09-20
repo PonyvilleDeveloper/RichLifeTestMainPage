@@ -1,0 +1,37 @@
+
+button.white {
+    border: 2px solid var(--Accent-Light-Blue_100);
+    background-color: white;
+    color: var(--Accent-Light-Blue_100);
+}
+
+span.purple *:not(img) {
+    background-color: var(--Accent-Purple_100);
+    border: 2px solid var(--Accent-Purple_100);
+    color: white;
+}
+
+span.purple img[alt=figure] {
+    border: 0px;
+    height: 1.5em;
+    width: 1.25em;
+    position: relative;
+    top: 6.5px;
+    left: -7.5px;
+}
+
+span.purple button.square {
+    padding: 2px;
+    height: fit-content;
+    width: auto;
+    aspect-ratio: 1 / 1;
+    position: relative;
+    top: 3px;
+    left: -16.5px;
+}
+
+span.purple button.square img[alt=arrow] {
+    width: 70%;
+    height: auto;
+    object-fit: contain;
+}
